@@ -1,0 +1,39 @@
+body{
+    background-image: cover;
+}
+
+h3{
+    font-size: 25px !important;
+    width: 600;
+    height: 35;
+    background-color: aqua;
+    text-align: center;
+}
+
+.btn-success{
+    width: 200px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.btn-success:hover{
+    background-color: red;
+    font-size: 0;
+}
+
+.btn-success:hover:after{
+    content: attr(data-hover);
+    font-size: 13px;
+}
+
+canvas{
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    from {box-shadow: 1px 1px 38px red;}
+    to {box-shadow: 1px 1px 38px yellow;}
+}
